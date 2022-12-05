@@ -1,0 +1,10 @@
+version: '3'
+services:
+  myapp-main:
+    image: sdatqap2b:latest
+    ports:
+      - 8080:8080
+    environment:
+      - spring.datasource.url=jdbc:postgresql://sdatqap2.cjqbplq1bpq2.us-east-1.rds.amazonaws.com:5432/Tournaments
+      - spring.datasource.password=keyin2022
+      - spring.datasource.username=postgres
